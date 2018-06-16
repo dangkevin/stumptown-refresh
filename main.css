@@ -14,11 +14,13 @@
 }
 
 .header{
+    position: relative;
     width: 100%;
+    min-height: 30px;
 }
 .header-link li{
     display: inline-block;
-    padding: 30px 100px 0px 0px;
+    padding: 30px 120px 50px 0px;
 }
 .header-link li a {
     text-decoration: none;
@@ -28,14 +30,24 @@
 .navigation{
     float: right;
 }
-
-.banner{
-    background-size:cover;
-    background-repeat:no-repeat;
-    height:40%;
-
+.container{
+    width: 100%;
 }
-img{
+
+pic{
+    position: absolute;
+    height: auto;
     max-width: 100%;
+    width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
-
+.banner-image{
+    padding-right:10px;
+    background:url('yeeee.svg') no-repeat center;
+    position: absolute;
+    margin-top: 20%;
+    height:50%;
+    width: 98%;
+    background-size: 100%;
+}
