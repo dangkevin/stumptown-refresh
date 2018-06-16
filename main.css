@@ -1,0 +1,25 @@
+
+
+#logo{
+    width: 350px;
+    height: 100px;
+    background:url(stump2.png) no-repeat center;
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.navigation{
+    display: inline;
+}
+
+.header-link li{
+    display: inline-block;
+    list-style: none;
+}
+
+.navigation{
+    float: right;
+}
+
+
