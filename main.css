@@ -1,5 +1,15 @@
 
+html{
+    overflow-y: scroll;
+}
 
+
+body{
+    padding: 0;
+    margin: 0 auto; 
+    max-width: 100%;
+
+}
 #logo{
     width: 350px;
     height: 100px;
@@ -11,43 +21,51 @@
 
 .navigation{
     display: inline;
+    float: right;
 }
 
-.header{
+header{
     position: relative;
     width: 100%;
-    min-height: 30px;
+    min-height: 50px;
 }
 .header-link li{
     display: inline-block;
-    padding: 30px 120px 50px 0px;
+    padding: 30px 100px 50px 0px;
 }
 .header-link li a {
     text-decoration: none;
     color: black;
 }
 
-.navigation{
-    float: right;
-}
-.container{
+
+#banner{  
     width: 100%;
 }
 
-pic{
-    position: absolute;
-    height: auto;
-    max-width: 100%;
-    width:100%;
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-.banner-image{
-    padding-right:10px;
+.banner-image{   
     background:url('yeeee.svg') no-repeat center;
     position: absolute;
-    margin-top: 20%;
-    height:50%;
-    width: 98%;
+    margin-top: 5%;
+    height:60%;
+    width: 100%;
     background-size: 100%;
+    min-height: 200px;
 }
+
+.text{
+    width:70%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    text-align: center;
+    max-width: 100%;
+}
+
+.wrap{
+    min-width: 500px;
+    min-height: 300px;
+}
+
+
