@@ -1,6 +1,7 @@
 
 html{
     overflow-y: scroll;
+    height: 100%;
 }
 
 
@@ -38,14 +39,16 @@ header{
     color: black;
 }
 
-
+/*CSS that affects the main section banner*/
 #banner{  
     min-height: 400px;
     background: url('yeeee.svg')no-repeat center;
     background-size: 100%;
     height: 60%;
+    display: block;
+    border: 3px solid red;
 }
-
+/* Dont need for now
 #banner-image{   
     background:url('yeeee.svg') no-repeat center;
     position: absolute;
@@ -54,9 +57,9 @@ header{
     width: 100%;
     background-size: 100%;
     min-height: 200px;
-}
+}*/
 
-.text{
+/*.text{
     border: 5px solid black;
     width:70%;
     height: 50%;
@@ -65,11 +68,11 @@ header{
     margin-top: 50%;
     text-align: center;
     max-width: 100%;
-}
-
-.wrap{
-    min-width: 300%;
-    min-height: 5%;
-}
-
-
+}*/
+    .text{
+        margin-top: 0;
+        min-height: 10%;
+       text-align: center;
+       border: 5px solid black;
+    }
+  
