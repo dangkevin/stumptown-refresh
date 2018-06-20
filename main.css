@@ -89,30 +89,36 @@ header{
     margin:auto;
     overflow:hidden;
 }
+#grid-section .hi{
+    background-color: #FAFAFA;
+}
 
 .city-grid {
     grid-column-gap: 50px;
     grid-row-gap: 40px;
     justify-content: center;
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 350px 350px 350px;
     grid-template-rows: 250px 250px;
 }
 .city-grid #new-york{
-    background: url('ny.jpg')no-repeat 0 center;
+    background: url('ny.jpg')no-repeat;
     background-size: cover;
 }
 .city-grid #los-angeles{
-    background-color: purple;
+    background: url('la.jpg')no-repeat;
+    background-size: cover;
 }
 .city-grid #portland{
-    background-color: brown;
+    background: url('portland.jpeg')no-repeat;
+    background-size: cover;
 }
 .city-grid #new-orleans{
-    background-color: orange;
+    background: url('no.jpeg')no-repeat;
+    background-size: cover;
 }
 .city-grid #seattle{
-    background: url('sea.jpg')no-repeat 0 center;
+    background: url('sea.jpg')no-repeat -90px;
     background-size: cover;
 }
 .city-grid #chicago{
