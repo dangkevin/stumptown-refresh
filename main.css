@@ -48,7 +48,7 @@ header{
 #banner{  
     text-align: center;
     min-height: 500px;
-    background: url('yay.svg')no-repeat center;
+    background: url('yay.svg')no-repeat 0 center;
     background-size: cover;
 }
 
@@ -57,7 +57,6 @@ header{
     height:50px;
     width: 100%;
     margin-top:0;
-    background-color:grey;
 }
     /*Removes that gap between the banner and the newsletter*/
 #newsletter h2{
@@ -66,7 +65,7 @@ header{
     padding:20px;
 }
 
-    #newsletter form{
+#newsletter form{
     margin-top:0;
     float: right;
     padding: 20px;
@@ -85,8 +84,59 @@ header{
 }
 
   
-    .container{
-        width:80%;
-        margin:auto;
-        overflow:hidden;
-      }
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+.city-grid {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px;
+}
+.city-grid #new-york{
+    background-color: red;
+}
+.city-grid #los-angeles{
+    background-color: purple;
+}
+.city-grid #portland{
+    background-color: brown;
+}
+.city-grid #new-orleans{
+    background-color: orange;
+}
+.city-grid #seattle{
+    background-color: green;
+}
+.city-grid #chicago{
+    background-color:blue;
+}
+
+hr{
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+}
+
+.banner-grid{
+    grid-column-gap: 100px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 300px 300px;
+}
+
+.banner-grid #first{
+    background-color: aqua;
+}
+
+.banner-grid #second{
+    background-color: royalblue;
+}
+
