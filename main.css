@@ -91,7 +91,7 @@ header{
 }
 
 .city-grid {
-    grid-column-gap: 40px;
+    grid-column-gap: 50px;
     grid-row-gap: 40px;
     justify-content: center;
     display: grid;
@@ -99,7 +99,8 @@ header{
     grid-template-rows: 250px 250px;
 }
 .city-grid #new-york{
-    background-color: red;
+    background: url('ny.jpg')no-repeat 0 center;
+    background-size: cover;
 }
 .city-grid #los-angeles{
     background-color: purple;
@@ -111,32 +112,40 @@ header{
     background-color: orange;
 }
 .city-grid #seattle{
-    background-color: green;
+    background: url('sea.jpg')no-repeat 0 center;
+    background-size: cover;
 }
 .city-grid #chicago{
     background-color:blue;
 }
 
 hr{
-    margin: 20px 0;
+    width: 80%;
+    margin-top: 20px;
     border: 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #fff;
 }
 
+#quote .yes{
+    width:60%;
+}
+
 .banner-grid{
-    grid-column-gap: 100px;
+    grid-row-gap: 25px;
     justify-content: center;
     display: grid;
-    grid-template-columns: 600px 600px;
+    grid-template-columns: 1200px;
     grid-template-rows: 300px 300px;
 }
 
 .banner-grid #first{
-    background-color: aqua;
+    background: url('stump2.jpg')no-repeat 0 center;
+    background-size: cover;
 }
 
 .banner-grid #second{
-    background-color: royalblue;
+    background: url('stump1.jpg')no-repeat 0 center;
+    background-size: cover;
 }
 
