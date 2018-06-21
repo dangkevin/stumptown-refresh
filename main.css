@@ -116,6 +116,7 @@ header{
 }
     /*Removes that gap between the banner and the newsletter*/
 #newsletter h2{
+    font-weight: lighter;
     margin-top: 0;
     float: left;
     padding-top: 20px;
@@ -127,7 +128,6 @@ header{
     margin-top:0;
     float: right;
     padding-right: 10%;
-   
 }
     
 
@@ -166,6 +166,10 @@ header{
 }
 
 
+#cities h2{
+    font-weight: 100;
+}
+
 .city-grid {
     grid-column-gap: 50px;
     grid-row-gap: 40px;
@@ -179,8 +183,16 @@ header{
     background-size: cover;
 }
 
+.nyny{
+    color: black;
+}
+
 .city-grid #new-york:hover{
     opacity:0.3
+}
+
+.city-grid #new-york:hover .middle{
+    opacity:1;
 }
 
 .city-grid #los-angeles{
