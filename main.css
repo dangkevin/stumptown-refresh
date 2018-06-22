@@ -40,9 +40,9 @@ animation-delay: 0.7s;
 }
 
 .fade-in2.two {
--webkit-animation-delay: 2.5s;
--moz-animation-delay: 2.5s;
-animation-delay: 2.5s;
+-webkit-animation-delay: 2.0s;
+-moz-animation-delay: 2.0s;
+animation-delay: 2.0s;
 }
 
 .trans--grow{
@@ -122,14 +122,14 @@ header{
     margin-top: 0;
     float: left;
     padding-top: 10px;
-    padding-left: 10%;
+    padding-left: 15%;
     
 }
 
 #newsletter form{
     margin-top:0;
     float: right;
-    padding-right: 10%;
+    padding-right: 15%;
 }
     
 
@@ -286,6 +286,5 @@ hr{
 footer{
     background-color: #FAFAFA;
     width: 100%;
-    height: 10%;
-
+    height: 100px;
 }
