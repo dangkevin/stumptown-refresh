@@ -6,7 +6,7 @@
     <title>Stumptown Coffee Roasters</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
     <script src="main.js"></script>
 </head>
 <body>
@@ -36,27 +36,37 @@
         </section>
         <section id = "cities">
             <div class = "text">
-            <h2> Our Locations</h2>
+            <div id = "location-box">
+            <h1> Locations</h1> 
+            </div>
+            <h2> <span class = "spacing" id = "nyc">New York</span>
+                 <span class = "spacing" id = "por">Portland</span>
+                 <span class = "spacing"id = "la">Los Angeles</span>
+                 <span class = "spacing"id = "no">New Orleans</span>
+                 <span class = "spacing"id = "chi">Chicago</span>
+                 <span class = "spacing"id = "sea">Seattle</span>
+            </h2>
             </div>
         </section>
         <section id = "grid-section" class = "fade-in2 two">
             <div class="city-grid">
-                <a id = "new-york" href = "https://www.google.com"> </a>
-                <a id = "portland"></a>
-                <a id = "los-angeles"> </a>
-                <a id = "new-orleans"> </a>
-                <a id = "chicago"></a>
-                <a id = "seattle"></a>          
+                <a onmouseover = "mouseOver1()" onmouseout="mouseOut1()" id = "new-york" href = "https://www.stumptowncoffee.com/locations/newyork"> </a>
+                <a onmouseover= "mouseOver2()" onmouseout="mouseOut2()"  id = "portland" href = "https://www.stumptowncoffee.com/locations/portland"></a>
+                <a onmouseover = "mouseOver3()" onmouseout="mouseOut3()" id = "los-angeles" href = "https://www.stumptowncoffee.com/locations/losangeles"></a>
+                <a onmouseover = "mouseOver4()" onmouseout="mouseOut4()"  id = "new-orleans" href = "https://www.stumptowncoffee.com/locations/new-orleans/ace-hotel-new-orleans"></a>
+                <a onmouseover = "mouseOver5()"onmouseout="mouseOut5()" id = "chicago" href = "https://www.stumptowncoffee.com/locations/chicago"></a>
+                <a onmouseover = "mouseOver6()"onmouseout="mouseOut6()" id = "seattle" href = "https://www.stumptowncoffee.com/locations/seattle"></a>         
             </div>
             <hr/>
         </section>
-        <section id = "quote">
-            <div class = "yes">
-                <h1> <span class = "quote">"</span>While you are holding that cup of coffee, close your eyes. <br> Open your mouth slightly. Breathe in deeply through your nose.<span class = "quote">"</span></h1>
+        <section id = "quote-section">
+            <div class = "quote-container">
+                <h1> <em><span class = "quote">"</span><em>While you are holding that cup of coffee, close your eyes. <br> Open your mouth slightly. Breathe in deeply through your nose.<span class = "quote">"</span></em></h1>
             </div>
         </section>
 
         <section id = "banner2">
+            <hr>
             <div class = "banner-grid">
                 <div id = "first"></div>
                 <div id = "second"></div>
