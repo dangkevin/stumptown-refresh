@@ -288,3 +288,9 @@ footer{
     width: 100%;
     height: 100px;
 }
+
+.footer-style{
+    list-style:none;
+    font-size: 1em;
+    vertical-align: center;
+    }
