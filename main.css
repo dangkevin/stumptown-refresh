@@ -301,9 +301,9 @@ hr{
 
 footer{
     
-    background-color: blue;
+    background-color: yellow;
     width: 100%;
-    min-height: 2px;
+    min-height: 5rem;
 }
 .footer-link{
     float: right;
