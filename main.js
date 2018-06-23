@@ -1,51 +1,50 @@
 function mouseOver1(){
-    document.getElementById("nyc").style.textDecoration = "underline";
+    document.getElementById("nyc").style.color = "orange";  
 }
 
 function mouseOver2(){
-    document.getElementById("por").style.textDecoration = "underline";
+    document.getElementById("por").style.color = "orange";
 }
 
 
 function mouseOver3(){
-    document.getElementById("la").style.textDecoration = "underline";
+    document.getElementById("la").style.color = "orange";
 }
 
-
 function mouseOver4(){
-    document.getElementById("no").style.textDecoration = "underline";
+    document.getElementById("no").style.color = "orange";
 }
 
 
 function mouseOver5(){
-    document.getElementById("chi").style.textDecoration = "underline";
+    document.getElementById("chi").style.color = "orange";
 }
 
 function mouseOver6(){
-    document.getElementById("sea").style.textDecoration = "underline";
+    document.getElementById("sea").style.color = "orange";
 }
 
 function mouseOut1(){
-    document.getElementById("nyc").style.textDecoration = "none";
+    document.getElementById("nyc").style.color = "black";
 }
 
 function mouseOut2(){
-    document.getElementById("por").style.textDecoration = "none";
+    document.getElementById("por").style.color = "black";
 }
 
 function mouseOut3(){
-    document.getElementById("la").style.textDecoration = "none";
+    document.getElementById("la").style.color = "black";
 }
 
 function mouseOut4(){
-    document.getElementById("no").style.textDecoration = "none";
+    document.getElementById("no").style.color = "black";
 }
 
 function mouseOut5(){
-    document.getElementById("chi").style.textDecoration = "none";
+    document.getElementById("chi").style.color = "black";
 }
 
 function mouseOut6(){
-    document.getElementById("sea").style.textDecoration = "none";
+    document.getElementById("sea").style.color = "black";
 }
 
