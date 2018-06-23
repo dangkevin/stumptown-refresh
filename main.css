@@ -77,7 +77,7 @@ body{
 #logo{
     width: 350px;
     height: 100px;
-    background:url(stump2.png) no-repeat center;
+    background:url(images/stump2.png) no-repeat center;
     display: block;
     float: left;
     position: relative;
@@ -122,7 +122,7 @@ header{
 #banner{  
     text-align: center;
     min-height: 500px;
-    background: url('yay.svg')no-repeat 0 center;
+    background: url('images/yay.svg')no-repeat 0 center;
     background-size: cover;
 }
 
@@ -201,7 +201,7 @@ header{
     grid-template-rows: 250px 250px;
 }
 .city-grid #new-york{
-    background: url('ny.jpg')no-repeat;
+    background: url('images/ny.jpg')no-repeat;
     background-size: cover;
 }
 
@@ -212,7 +212,7 @@ header{
 }
 
 .city-grid #los-angeles{
-    background: url('la.jpg')no-repeat;
+    background: url('images/la.jpg')no-repeat;
     background-size: cover;
 }
 
@@ -220,7 +220,7 @@ header{
     opacity:0.3;
 }
 .city-grid #portland{
-    background: url('portland.jpg')no-repeat;
+    background: url('images/portland.jpg')no-repeat;
     background-size: cover;
 }
 
@@ -228,7 +228,7 @@ header{
     opacity:0.3;
 }
 .city-grid #new-orleans{
-    background: url('no.jpg')no-repeat;
+    background: url('images/no.jpg')no-repeat;
     background-size: cover;
 }
 
@@ -237,7 +237,7 @@ header{
 }
 
 .city-grid #seattle{
-    background: url('sea.jpg')no-repeat -90px;
+    background: url('images/sea.jpg')no-repeat -90px;
     background-size: cover;
 }
 
@@ -246,7 +246,7 @@ header{
 }
 
 .city-grid #chicago{
-    background: url('chicago.jpg')no-repeat;
+    background: url('images/chicago.jpg')no-repeat;
     background-size: cover;
 }
 
@@ -290,12 +290,12 @@ hr{
 }
 
 .banner-grid #first{
-    background: url('ho.jpg')no-repeat 0 -500px;
+    background: url('images/inside.jpg')no-repeat 0 -500px;
     background-size: cover;
 }
 
 .banner-grid #second{
-    background: url('LAstump.jpg')no-repeat 0 -220px;
+    background: url('images/LAstump.jpg')no-repeat 0 -220px;
     background-size: cover;
 }
 
