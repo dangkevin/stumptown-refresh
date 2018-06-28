@@ -17,6 +17,7 @@
  animation-duration:1s;
 }
 
+
 .fade-in2 {
  opacity:0;  /* make things invisible upon start */
  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -72,6 +73,7 @@ body{
     font-family: 'Quicksand', sans-serif;
     color: #212121;
     font-weight: 300;
+    overflow-x: hidden;
    
 }
 #logo{
@@ -124,7 +126,7 @@ header{
     text-align: center;
     min-height: 500px;
     background: url('images/yay.svg')no-repeat 0 center;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #newsletter{
@@ -194,8 +196,9 @@ header{
 }
 
 .city-grid {
+    margin-top: 5%;
     grid-column-gap: 50px;
-    grid-row-gap: 40px;
+    grid-row-gap: 100px;
     justify-content: center;
     display: grid;
     grid-template-columns: 350px 350px 350px;
@@ -270,16 +273,16 @@ hr{
 
 
 #quote-section .quote-container{
-    margin-top: 10%;
-    margin-bottom: 10%;
     left:50%;
     right: 50%;
     text-align: center;
     font-size: 20px;
 }
 
+
 #quote-section .quote-container .quote{
     font-size: 4rem;
+    
 }
 
 .banner-grid{
@@ -390,23 +393,162 @@ footer{
     .header-link>li:not(:last-child) {
         display: none;
     }
+
+    
     .city-grid {
+        padding-top: 50px;
         justify-content: center;
         display: grid;
+        grid-row-gap: 100px;
         grid-template-columns: 350px;
         grid-template-rows: 350px 350px 350px 350px 350px 350px;
     }
+    .city-grid #los-angeles{
+        background: url('images/la.jpg')no-repeat;
+        background-size: 100%;
+    }
+    .city-grid #portland{
+        background: url('images/portland.jpg')no-repeat;
+        background-size: 100%;
+    }
+    .city-grid #new-orleans{
+        background: url('images/no.jpg')no-repeat;
+        background-size: 100%;
+    }
+    .city-grid #seattle{
+        background: url('images/sea.jpg')no-repeat;
+        background-size: 100%;
+    }
+    .city-grid #chicago{
+        background: url('images/chicago.jpg')no-repeat;
+        background-size: 100%;
+    }
+    
+    #cities .text #location-box{
+        margin-top: 15rem;
+        margin-bottom: 3rem;
+        width: 100%;
+        display: block;
+    }
+    #cities .text #location-box h1{
+        padding-left: 15%;
+    }
+    
+
+
+    #newsletter h2{
+        font-weight: 500;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-left: 25%;
+    }
+
+    #newsletter form{
+        margin-top:0;
+        padding-left: 20%;
+    }
+    .footer-container{
+        margin-top: 10px;   
+        padding-top: 10px;
+        width: 70%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .banner-grid #first{
+        background: url('images/inside.jpg')no-repeat 0 -500px;
+
+        max-width: 100%;
+        height: auto;
+     
+    }
+    
+    .banner-grid #second{
+        background: url('images/LAstump.jpg')no-repeat 0 -220px;
+        max-width: 80%;
+        height: auto;
+      
+    }
 }
 
-
-
-  
   /* Tablet Styles */
   @media only screen and (min-width: 401px) and (max-width: 960px) {
     .header-link > li:notlast-child{
         display: none;
     }
-  }
+
+    #cities .text #location-box{
+        margin-top: 12rem;
+        margin-bottom: 3rem;
+    }
+
+    .city-grid {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px 300px;
+    }
+
+    .city-grid #los-angeles{
+        background: url('images/la.jpg')no-repeat -30px;
+        background-size: cover;
+    }
+    .city-grid #portland{
+        background: url('images/portland.jpg')no-repeat;
+        background-size: cover;
+    }
+    .city-grid #new-orleans{
+        background: url('images/no.jpg')no-repeat -150px;
+        background-size: cover;
+    }
+    .city-grid #seattle{
+        background: url('images/sea.jpg')no-repeat -250px;
+        background-size: cover;
+    }
+    .city-grid #chicago{
+        background: url('images/chicago.jpg')no-repeat -100px;
+        background-size: cover;
+    }
+
+    #newsletter h2{
+        font-weight: 500;
+        margin-top: 0;
+        float: left;
+        padding-top: 10px;
+        padding-left: 30%;
+    }
+
+    #newsletter form{
+        margin-top:0;
+        float: right;
+        padding-right: 23%;
+    }
+
+    .footer-container{
+        margin-top: 10px;   
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .banner-grid #first{
+        background: url('images/inside.jpg')no-repeat 0 -500px;
+        
+        max-width: 100%;
+        height: auto;
+     
+    }
+    
+    .banner-grid #second{
+        background: url('images/LAstump.jpg')no-repeat 0 -220px;
+        max-width: 100%;
+        height: auto;
+      
+    }
+}
   
   /* Desktop Styles */
     @media only screen and (min-width: 961px) {
