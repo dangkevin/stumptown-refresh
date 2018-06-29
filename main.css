@@ -306,7 +306,7 @@ hr{
 footer{
     background-color: #FAFAFA;
     width: 100%;
-    height: auto;
+    height: 20%;
     overflow: hidden;
 }
 
@@ -390,9 +390,7 @@ footer{
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-    .header-link>li:not(:last-child) {
-        display: none;
-    }
+
 
     
     .city-grid {
@@ -466,16 +464,15 @@ footer{
     .banner-grid #second{
         background: url('images/LAstump.jpg')no-repeat 0 -220px;
         max-width: 80%;
-        height: auto;
-      
+        height: auto; 
+    }
+    .header-link > li:not(:first-child){
+        display: none;
     }
 }
 
   /* Tablet Styles */
   @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .header-link > li:notlast-child{
-        display: none;
-    }
 
     #cities .text #location-box{
         margin-top: 12rem;
@@ -548,10 +545,28 @@ footer{
         height: auto;
       
     }
+    .footer-container{
+        margin-top: 10px;   
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .header-link > li:not(:first-child){
+        display: none;
+    }
+    
+
 }
   
   /* Desktop Styles */
     @media only screen and (min-width: 961px) {
+        .header-link > li:first-child{
+            display: none;
+        }
     
 }
 
