@@ -90,36 +90,122 @@ body{
     display: inline;
 }
 
-header{
+
+.header {
+    background-color: #fff;
     position: relative;
     width: 100%;
-    min-height: 100px;
-}
-.header-link li{
-    float: right;
-    display: inline;
-    padding: 30px 50px 50px 0px;
-}
-.header-link li a {
+    height: 100px;
+    z-index: 4;
+  }
+  
+  .header ul {
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
     text-decoration: none;
-    color: black;
-}
-
-.header-link li #a1:hover{
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
     color: orange;
-}
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 50px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
 
-.header-link li #a2:hover{
-    color: orange;
-}
 
-.header-link li #a3:hover{
-    color: orange;
-}
 
-.header-link li #a4:hover{
-    color: orange;
-}
+
+
+
+
+
 
 /*CSS that affects the main section banner*/
 #banner{  
@@ -533,16 +619,12 @@ footer{
 
     .banner-grid #first{
         background: url('images/inside.jpg')no-repeat 0 -500px;
-        
         max-width: 100%;
-        height: auto;
-     
     }
     
     .banner-grid #second{
         background: url('images/LAstump.jpg')no-repeat 0 -220px;
         max-width: 100%;
-        height: auto;
       
     }
     .footer-container{
@@ -567,7 +649,24 @@ footer{
         .header-link > li:first-child{
             display: none;
         }
-    
-}
-
+    }
+  
+  
+  @media (min-width: 768px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
 
