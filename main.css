@@ -1,3 +1,4 @@
+
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -552,9 +553,7 @@ footer{
         max-width: 80%;
         height: auto; 
     }
-    .header-link > li:not(:first-child){
-        display: none;
-    }
+
 }
 
   /* Tablet Styles */
@@ -668,3 +667,4 @@ footer{
       display: none;
     }
   }
+  
