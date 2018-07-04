@@ -552,12 +552,13 @@ footer{
         max-width: 80%;
         height: auto; 
     }
-
- 
+    .header-link > li:not(:first-child){
+        display: none;
+    }
 }
 
   /* Tablet Styles */
-  @media only screen and (min-width: 768px){
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
 
     #cities .text #location-box{
         margin-top: 12rem;
@@ -636,11 +637,20 @@ footer{
         text-align: center;
     }
 
-
+    .header-link > li:not(:first-child){
+        display: none;
+    }
     
 
 }
-
+  
+  /* Desktop Styles */
+    @media only screen and (min-width: 961px) {
+        .header-link > li:first-child{
+            display: none;
+        }
+    }
+  
   
   @media (min-width: 768px) {
     .header li {
