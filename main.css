@@ -476,17 +476,15 @@ footer{
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media (min-width: 320px) and (max-width: 480px) {
 
-
-    
     .city-grid {
         padding-top: 50px;
         justify-content: center;
         display: grid;
         grid-row-gap: 100px;
-        grid-template-columns: 350px;
-        grid-template-rows: 350px 350px 350px 350px 350px 350px;
+        grid-template-columns: 300px;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
     }
     .city-grid #los-angeles{
         background: url('images/la.jpg')no-repeat;
@@ -519,8 +517,6 @@ footer{
         padding-left: 15%;
     }
     
-
-
     #newsletter h2{
         font-weight: 500;
         margin-top: 0;
@@ -542,7 +538,6 @@ footer{
 
     .banner-grid #first{
         background: url('images/inside.jpg')no-repeat 0 -500px;
-
         max-width: 100%;
         height: auto;
      
@@ -550,14 +545,14 @@ footer{
     
     .banner-grid #second{
         background: url('images/LAstump.jpg')no-repeat 0 -220px;
-        max-width: 80%;
+        max-width: 100%;
         height: auto; 
     }
 
 }
 
   /* Tablet Styles */
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
+  @media (min-width: 401px) and (max-width: 960px) {
 
     #cities .text #location-box{
         margin-top: 12rem;
@@ -584,7 +579,7 @@ footer{
         background-size: cover;
     }
     .city-grid #seattle{
-        background: url('images/sea.jpg')no-repeat -250px;
+        background: url('images/sea.jpg')no-repeat -200px;
         background-size: cover;
     }
     .city-grid #chicago{
@@ -623,7 +618,7 @@ footer{
     
     .banner-grid #second{
         background: url('images/LAstump.jpg')no-repeat 0 -220px;
-        max-width: 100%;
+        max-width: 100%; 
       
     }
     .footer-container{
@@ -642,13 +637,6 @@ footer{
     
 
 }
-  
-  /* Desktop Styles */
-    @media only screen and (min-width: 961px) {
-        .header-link > li:first-child{
-            display: none;
-        }
-    }
   
   
   @media (min-width: 768px) {
