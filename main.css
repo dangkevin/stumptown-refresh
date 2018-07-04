@@ -96,7 +96,7 @@ body{
     position: relative;
     width: 100%;
     height: 100px;
-    z-index: 3;
+    z-index: 4;
   }
   
   .header ul {
@@ -198,6 +198,15 @@ body{
     top: 0;
   }
   
+
+
+
+
+
+
+
+
+
 /*CSS that affects the main section banner*/
 #banner{  
     text-align: center;
@@ -446,7 +455,8 @@ footer{
 
 .fa-yelp{
     color: black;
-    font-size: 20px;   
+    font-size: 20px;
+    
 }
 
 .fa-yelp:hover{
@@ -542,13 +552,12 @@ footer{
         max-width: 80%;
         height: auto; 
     }
-    .header-link > li:not(:first-child){
-        display: none;
-    }
+
+ 
 }
 
   /* Tablet Styles */
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
+  @media only screen and (min-width: 768px){
 
     #cities .text #location-box{
         margin-top: 12rem;
@@ -627,25 +636,25 @@ footer{
         text-align: center;
     }
 
-    .header-link > li:not(:first-child){
-        display: none;
-    }
-        .header li {
-          float: left;
-        }
-        .header li a {
-          padding: 20px 30px;
-        }
-        .header .menu {
-          clear: none;
-          float: right;
-          max-height: none;
-        }
-        .header .menu-icon {
-          display: none;
-        }
+
+    
+
 }
-  
-  
 
-
+  
+  @media (min-width: 768px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
