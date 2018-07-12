@@ -533,7 +533,7 @@ footer{
     grid-gap: 2em;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-columns: repeat(3, 400px);
     grid-template-rows:repeat(2,250px);
     }
 }
