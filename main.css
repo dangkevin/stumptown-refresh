@@ -500,7 +500,7 @@ footer{
  @media only screen and (min-width : 768px) {
     .city-grid {
         margin-top: 5%;
-        grid-column-gap: 50px;
+        grid-gap: 50px;
         grid-row-gap: 100px;
         justify-content: center;
         display: grid;
@@ -523,17 +523,17 @@ footer{
         display: none;
       }
 }
-
+.chacha{
+    padding: 15px;
+}
 @media (min-width: 1200px) { 
     
     .city-grid {
-    margin-top: 5%;
-    grid-column-gap: 20px;
-    grid-row-gap: 100px;
+    grid-gap: 2em;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-template-rows: repeat(2,250px);
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows:repeat(2,250px);
     }
 }
 
