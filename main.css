@@ -465,6 +465,10 @@ footer{
     color: orange;
 }
 
+.chacha{
+    padding: 15px;
+}
+
 
 
 
@@ -498,7 +502,6 @@ footer{
 
  /* Small Devices, Tablets */
  @media only screen and (min-width : 768px) {
-     body
     .city-grid {
         margin-top: 5%;
         grid-gap: 50px;
@@ -524,17 +527,13 @@ footer{
         display: none;
       }
 }
-.chacha{
-    padding: 15px;
-}
+
 @media (min-width: 1200px) { 
-    
     .city-grid {
     grid-gap: 2em;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows:repeat(2,250px);
+    grid-template-columns: repeat(3, 0.3fr);
+    grid-template-rows:repeat(2,300px);
     }
 }
-
