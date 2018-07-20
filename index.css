@@ -21,4 +21,21 @@
      min-height: 70px;
      padding-top: 30px;
  }
+ 
+ nav{
+     display: inline;
+ }
+
+ header nav {
+     float: right;
+ }
+
+ header ul{
+     list-style: none;
+     overflow: hidden;
+ }
+
+header nav li a{
+    text-decoration: none;
+}
 
