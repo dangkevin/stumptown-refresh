@@ -1,89 +1,50 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Stumptown Coffee Roasters</title>
+    <title>Stumptown Coffee Roasters</title
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <script src="main.js"></script>
-</head>
-<body>
-    <header class = "header">
-        <a href = "#" id = "logo"></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-                <li> <a id = "a1" href ="https://www.stumptowncoffee.com/products">Shop </a>
-                <li> <a id = "a2" href ="https://www.stumptowncoffee.com/subscriptions">Subscription</a>
-                <li> <a id = "a3" href ="https://www.stumptowncoffee.com/brew-guides">The Brew Guide</a>
-                <li><a id = "a4" href = "https://www.stumptowncoffee.com/blog">Blog</a></li>    
-        </ul>
+  </head>
+  <body>
+    <header>
+      <a href = "#" id = "logo"></a>
+      <nav>
+        <a href = "#" id = "hamburger"></a>
+          <ul>
+            <li> <a id = "a1" href ="https://www.stumptowncoffee.com/products">Shop </a>
+            <li> <a id = "a2" href ="https://www.stumptowncoffee.com/subscriptions">Subscription</a>
+            <li> <a id = "a3" href ="https://www.stumptowncoffee.com/brew-guides">The Brew Guide</a>
+            <li> <a id = "a4" href ="https://www.stumptowncoffee.com/blog"> Blog </a>
+         </ul>
+      </nav>
     </header>
-        <section id = "banner" class = "fade-in one">
-        </section>
-        <section id = "newsletter">
-            <hr/>
-            <div class = "container">
-                <h2> Subscribe to our newsletter </h2> 
-                <form>
-                    <input id = "input" type="email" placeholder="Enter Email...">
-                    <button type="submit" class="button_1">Subscribe</button>
-                </form>
-            </div>
-        </section>
-        <section id = "cities">
-            <div class = "text">
-            <div id = "location-box">
-            <h1> Locations</h1> 
-            </div>
-            <h2> <span class = "spacing" id = "nyc">New York</span>
-                 <span class = "spacing" id = "por">Portland</span>
-                 <span class = "spacing" id = "la">Los Angeles</span>
-                 <span class = "spacing"id = "no">New Orleans</span>
-                 <span class = "spacing"id = "chi">Chicago</span>
-                 <span class = "spacing"id = "sea">Seattle</span>
-            </h2>
-            </div>
-        </section>
-        <section id = "grid-section" class = "fade-in2 two">
-            <div class = "chacha">
-            <div class="city-grid">
-                <a onmouseover ="mouseOver1()" onmouseout="mouseOut1()" id = "new-york" href = "https://www.stumptowncoffee.com/locations/newyork"> </a>
-                <a onmouseover= "mouseOver2()" onmouseout="mouseOut2()"  id = "portland" href = "https://www.stumptowncoffee.com/locations/portland"></a>
-                <a onmouseover = "mouseOver3()" onmouseout="mouseOut3()" id = "los-angeles" href = "https://www.stumptowncoffee.com/locations/losangeles"></a>
-                <a onmouseover = "mouseOver4()" onmouseout="mouseOut4()" id = "new-orleans" href = "https://www.stumptowncoffee.com/locations/new-orleans/ace-hotel-new-orleans"></a>
-                <a onmouseover = "mouseOver5()"onmouseout="mouseOut5()" id = "chicago" href = "https://www.stumptowncoffee.com/locations/chicago"></a>
-                <a onmouseover = "mouseOver6()"onmouseout="mouseOut6()" id = "seattle" href = "https://www.stumptowncoffee.com/locations/seattle"></a>         
-            </div>
+    <section id = "banner">
+      <div container>
+      </div>
+      <section id = "newsletter">
+        <hr/>
+        <div class = "container">
+          <h1> Subscribe to our newsletter </h1>
+          <form>
+            <input id = "input" type = "email" placeholder = "Enter Email...">
+            <button type = "submit" class = "button_1"> Subscribe </button>
+          </form>
         </div>
-            <hr/>
-        </section>
-        <section id = "quote-section">
-            <div class = "quote-container">
-                <h1> <em><span class = "quote">"</span><em>While you are holding that cup of coffee, close your eyes. <br> Open your mouth slightly. Breathe in deeply through your nose.<span class = "quote">"</span></em></h1>
-            </div>
-        </section>
-        <section id = "banner2">
-            <hr>
-            <div class = "banner-grid">
-                <div id = "first"></div>
-                <div id = "second"></div>
-            </div>
-            <hr>
-        </section>
-        <footer>
-            <div class = "footer-container">
-            <h1 id = "f-h1"> © 2018 Stumptown Coffee Roasters</h1>
-            <ul class = "footer-link">
-                    <li> <a href ="https://www.instagram.com/stumptowncoffee/?hl=en"></li><i class="fab fa-instagram"></i></a>
-                    <li> <a href ="https://www.facebook.com/stumptowncoffee/"></li><i class="fab fa-facebook-f"></i></a>
-                    <li> <a href ="https://www.yelp.com/biz/stumptown-coffee-roasters-los-angeles"></li><i class="fab fa-yelp"></i></a>
-                    <li> <a href ="https://twitter.com/stumptowncoffee"></li><i class="fab fa-twitter"></i></a>
-                </ul>
-            </div>
-        </footer>
-</body>
+    </section>
+    <section id = "cities">
+      <div class = "container">
+        <div id = "locations">
+          <h1> Locations <h1/>
+          </div>
+          <h2> <span class = "spacing" id = "nyc">New York</span>
+               <span class = "spacing" id = "por">Portland</span>
+               <span class = "spacing" id = "la">Los Angeles</span>
+               <span class = "spacing"id = "no">New Orleans</span>
+               <span class = "spacing"id = "chi">Chicago</span>
+               <span class = "spacing"id = "sea">Seattle</span>
+          </h2>
+        </div>
+      </section>
+  </body>
 </html>
