@@ -18,24 +18,27 @@
     float: left;
  }
  header{
-     min-height: 70px;
-     padding-top: 30px;
- }
- 
- nav{
-     display: inline;
+     min-height: 100px;
  }
 
  header nav {
+     padding-top: 30px;
+     list-style: none;
      float: right;
  }
 
+ header a{
+     color: black;
+     text-decoration: none;
+ }
+
+ 
  header ul{
      list-style: none;
      overflow: hidden;
  }
-
-header nav li a{
-    text-decoration: none;
-}
+ header li{
+     display: inline;
+     padding: 0 30px 20px 0;
+ }
 
