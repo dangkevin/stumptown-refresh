@@ -10,6 +10,15 @@
      overflow: hidden;
  }
 
+  .button_1{
+      height: 40px;
+      background-color: #1976D2;
+      color: white;
+      width: 100px;
+      border:none;
+      font-size: 12px;
+  }
+
  #logo{
     width:300px;
     height: 100px;
@@ -17,6 +26,8 @@
     display: block;
     float: left;
  }
+
+ 
  header{
      min-height: 100px;
  }
@@ -42,8 +53,6 @@
      padding: 0 30px 20px 0;
  }
 
-
-
  .hello{
      width: 100%;
      display: grid;
@@ -51,8 +60,37 @@
  }
 
  .image{
-    background:url(images/stumpstump.jpg);
-    background-repeat: no-repeat;
+    background:url(images/stumpstump.jpg) no-repeat;
     background-size: 100%;
-    min-height: 600px;
+    min-height: 700px;
  }
+
+ #newsletter h1{
+     float: left;
+ }
+
+ #newsletter form{
+     float: right;
+     margin-top: 15px;
+ }
+
+ #newsletter input[type="email"]{
+     padding: 6px;
+     width: 200px;
+     height: 25px;
+ }
+
+ #locations{
+     margin-top: 50px;
+     text-align: center;
+ }  
+ 
+#cities #locations-list h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.spacing{
+    padding-left: 1%;
+    padding-right: 1%;
+}
