@@ -2,6 +2,8 @@
      margin: 0;
      padding: 0;
      background-color: white;
+     max-width: 100%;
+     overflow-x:hidden;
  }
 
  .container{
@@ -60,8 +62,10 @@
  }
 
  .image{
+     background-position: center;
+    display: block;
     background:url(images/stumpstump.jpg) no-repeat;
-    background-size: 100%;
+    background-size: cover;
     min-height: 700px;
  }
 
@@ -93,4 +97,68 @@
 .spacing{
     padding-left: 1%;
     padding-right: 1%;
+}
+
+.city-grid{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(250px,auto);
+    grid-gap: 2em;
+}
+
+.city-grid #new-york{
+    background: url('images/ny.jpg')no-repeat;
+    background-size: cover;
+}
+
+
+
+.city-grid #new-york:hover{
+    opacity:0.3;
+}
+
+.city-grid #los-angeles{
+    background: url('images/la.jpg')no-repeat;
+    background-size: cover;
+}
+
+.city-grid #los-angeles:hover{
+    opacity:0.3;
+}
+.city-grid #portland{
+    background: url('images/portland.jpg')no-repeat;
+    background-size: cover;
+}
+
+.city-grid #portland:hover{
+    opacity:0.3;
+}
+.city-grid #new-orleans{
+    background: url('images/no.jpg')no-repeat;
+    background-size: cover;
+}
+
+.city-grid #new-orleans:hover{
+    opacity:0.3;
+}
+
+.city-grid #seattle{
+    background: url('images/sea.jpg')no-repeat;
+    background-size: cover;
+}
+
+.city-grid #seattle:hover{
+    opacity:0.3;
+}
+
+.city-grid #chicago{
+    background: url('images/chicago.jpg')no-repeat;
+    background-size: cover;
+}
+
+.city-grid #chicago:hover{
+    opacity:0.3;
 }
