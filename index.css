@@ -162,3 +162,38 @@
 .city-grid #chicago:hover{
     opacity:0.3;
 }
+
+#quote .container h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.quotes{
+    font-size: 4rem;
+}
+
+
+.banner-grid{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+}
+
+#banners .banner-grid #first{
+    background: url('images/inside.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    min-height: 400px;
+}
+
+#banners .banner-grid #second{
+    background: url('images/LAstump.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    min-height: 400px;
+    }
+   
+
