@@ -4,6 +4,7 @@
      background-color: white;
      max-width: 100%;
      overflow-x:hidden;
+     font-family: 'Quicksand', sans-serif;
  }
 
  .container{
@@ -29,7 +30,15 @@
     float: left;
  }
 
- 
+ hr{
+    width: 80%;
+    margin-top: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+}
+
+
  header{
      min-height: 100px;
  }
@@ -174,10 +183,12 @@
 
 
 .banner-grid{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2em;
+    grid-gap: 4em;
 }
 
 #banners .banner-grid #first{
@@ -195,5 +206,79 @@
     display: block;
     min-height: 400px;
     }
-   
 
+#footer-h1{
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer{
+    background: red;
+}
+
+.footer-container #footer-h1{
+    float: left;
+    margin-left: 20%;
+}    
+
+.footer-container ul{
+    float: right;
+    margin-right: 20%;
+}
+
+
+.footer-link #footer-h1{
+    text-decoration: none; 
+
+}
+
+.footer-link{
+    text-align: center;
+}
+
+.footer-link li{
+    display: inline;
+}
+.footer-link li a {
+    text-decoration: none;
+    font-style: normal;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.fa-instagram {
+    color: black;
+    font-size: 20px;
+}
+
+.fa-instagram:hover {
+    color: orange;
+}
+
+.fa-facebook-f{
+    color: black;
+    font-size: 20px;
+}
+.fa-facebook-f:hover{
+    color: orange;
+    
+}
+
+.fa-yelp{
+    color: black;
+    font-size: 20px;
+    
+}
+
+.fa-yelp:hover{
+    color: orange;
+}
+
+.fa-twitter{
+    color: black;
+    font-size: 20px;
+}
+
+.fa-twitter:hover{
+    color: orange;
+}
