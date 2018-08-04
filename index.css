@@ -1,3 +1,60 @@
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+/* Fade in effect */
+.fade-in {
+ opacity:0;  /* make things invisible upon start */
+ -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+ -moz-animation:fadeIn ease-in 1;
+ animation:fadeIn ease-in 1;
+
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+
+ -webkit-animation-duration:1s;
+ -moz-animation-duration:1s;
+ animation-duration:1s;
+}
+
+.fade-in2 {
+ opacity:0;  /* make things invisible upon start */
+ -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+ -moz-animation:fadeIn ease-in 1;
+ animation:fadeIn ease-in 1;
+
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+
+ -webkit-animation-duration:1s;
+ -moz-animation-duration:1s;
+ animation-duration:1s;
+}
+
+
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.fade-in2.two {
+-webkit-animation-delay: 2.0s;
+-moz-animation-delay: 2.0s;
+animation-delay: 2.0s;
+}
+
+.trans--grow{
+    -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+    transition: width 1s  ease-out;
+    width : 0%;
+  }
+  
+  .grow{
+      width:100%;
+  } 
+ 
  body{
      margin: 0;
      padding: 0;
@@ -287,9 +344,6 @@ footer{
 
 @media only screen and (max-width: 480px){ 
 
-    body{
-        background-color: blue;
-    }
     #newsletter h1{
         float: none;
         text-align: center;
@@ -299,18 +353,30 @@ footer{
         float: none;
         width: 90%;
     }
+    .city-grid{
+        margin-top: 3em;
+        margin-bottom: 3em;
+        justify-content: center;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: 1fr;
 
+    }
+    
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 805px) {
     .city-grid{
         margin-top: 3em;
         margin-bottom: 3em;
         justify-content: center;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(250px,auto);
+        grid-auto-rows: minmax(300px,auto);
+        grid-gap: 2em;
     }
 }
-
-
 @media only screen and (max-width: 805px) {
   
     #newsletter h1{
@@ -332,16 +398,10 @@ footer{
         display:block;
         width: 73%;
     }
-    .city-grid{
-        margin-top: 3em;
-        margin-bottom: 3em;
-        justify-content: center;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(250px,auto);
-        grid-gap: 2em;
-    }
+
 }
+
+
    @media only screen and (max-width: 910px){
     .footer-container #footer-h1{
         float: none;
