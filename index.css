@@ -96,7 +96,7 @@ animation-delay: 2.0s;
 }
 
 
- header{
+ header{    
      min-height: 100px;
  }
 
@@ -136,6 +136,7 @@ animation-delay: 2.0s;
  }
 
  #newsletter h1{
+     font-weight: normal;
      float: left;
  }
 
@@ -150,12 +151,17 @@ animation-delay: 2.0s;
      height: 25px;
  }
 
- #locations{
+ #locations{   
      margin-top: 50px;
      text-align: center;
  }  
+
+ #locations h1{
+     font-weight: normal;
+ }
  
 #cities #locations-list h2{
+    font-weight: lighter;
     text-align: center;
     margin-top: 50px;
 }
@@ -178,6 +184,7 @@ animation-delay: 2.0s;
 .city-grid #new-york{
     background: url('images/ny.jpg')no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 
@@ -189,6 +196,7 @@ animation-delay: 2.0s;
 .city-grid #los-angeles{
     background: url('images/la.jpg')no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .city-grid #los-angeles:hover{
@@ -197,6 +205,7 @@ animation-delay: 2.0s;
 .city-grid #portland{
     background: url('images/portland.jpg')no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .city-grid #portland:hover{
@@ -205,6 +214,7 @@ animation-delay: 2.0s;
 .city-grid #new-orleans{
     background: url('images/no.jpg')no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .city-grid #new-orleans:hover{
@@ -214,6 +224,7 @@ animation-delay: 2.0s;
 .city-grid #seattle{
     background: url('images/sea.jpg')no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .city-grid #seattle:hover{
@@ -223,6 +234,7 @@ animation-delay: 2.0s;
 .city-grid #chicago{
     background: url('images/chicago.jpg')no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .city-grid #chicago:hover{
@@ -236,6 +248,10 @@ animation-delay: 2.0s;
 
 .quotes{
     font-size: 4rem;
+}
+
+#quote h1{
+    font-weight: normal;
 }
 
 
@@ -253,7 +269,7 @@ animation-delay: 2.0s;
     background-size: cover;
     background-position: center;
     display: block;
-    min-height: 400px;
+    min-height: 450px;
 }
 
 #banners .banner-grid #second{
@@ -261,10 +277,12 @@ animation-delay: 2.0s;
     background-size: cover;
     background-position: center;
     display: block;
-    min-height: 400px;
+    min-height: 450px;
     }
 
 #footer-h1{
+    font-weight: 100;
+    font-style: normal;
     font-size: 1rem;
     text-align: center;
 }   
@@ -275,11 +293,15 @@ footer{
 }
 
 .footer-container #footer-h1{
+    margin: 0 auto;
     float: left;
+    padding-top: 20px;
     margin-left: 15%;
 }    
 
 .footer-container ul{
+    margin: 0 auto;
+    padding-top: 20px;
     float: right;
     margin-right: 15%;
 }
@@ -360,8 +382,22 @@ footer{
         display: grid;
         grid-gap: 2em;
         grid-template-columns: 1fr;
-
     }
+    #banners .banner-grid #first{
+        background: url('images/inside.jpg')no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        min-height: 300px;
+    }
+    
+    #banners .banner-grid #second{
+        background: url('images/LAstump.jpg')no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        min-height: 300px;
+        }
     
 }
 
@@ -414,5 +450,4 @@ footer{
         margin-left: 5%;
     }
 }
-
-}
+    
