@@ -87,6 +87,127 @@ animation-delay: 2.0s;
     float: left;
  }
 
+.header a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.header li{
+    display: inline;
+    padding: 0 30px 20px 0;
+}
+
+ .header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    min-height: 100px;
+  }
+  
+  .header ul {  
+    margin:0;
+    padding-top: 15px;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {    
+    text-align: center;
+    display: block;
+    padding: 20px 20px; 
+    text-decoration: none;
+    
+  }
+  
+  .header li a:hover {
+    color:orange;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .header .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+
+
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 45px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .nav .menu {
+    max-height: 400px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+
+
+
  hr{
     width: 80%;
     margin-top: 20px;
@@ -96,30 +217,6 @@ animation-delay: 2.0s;
 }
 
 
- header{    
-     min-height: 100px;
- }
-
- header nav {
-     padding-top: 30px;
-     list-style: none;
-     float: right;
- }
-
- header a{
-     color: black;
-     text-decoration: none;
- }
-
- 
- header ul{
-     list-style: none;
-     overflow: hidden;
- }
- header li{
-     display: inline;
-     padding: 0 30px 20px 0;
- }
 
  .hello{
      width: 100%;
@@ -159,6 +256,7 @@ animation-delay: 2.0s;
  #locations h1{
      font-weight: normal;
  }
+
  
 #cities #locations-list h2{
     font-weight: lighter;
@@ -285,7 +383,8 @@ animation-delay: 2.0s;
     font-style: normal;
     font-size: 1rem;
     text-align: center;
-}   
+}  
+
 
 footer{
     background: #EEEEEE;
@@ -341,7 +440,6 @@ footer{
 }
 .fa-facebook-f:hover{
     color: orange;
-    
 }
 
 .fa-yelp{
@@ -373,8 +471,17 @@ footer{
 
     #newsletter form{
         float: none;
-        width: 90%;
     }
+
+    #newsletter #input{
+        width: 68%;
+    }
+    #newsletter .button_1{
+        float: none;
+        display:block;
+        width: 74%;
+    }
+    
     .city-grid{
         margin-top: 3em;
         margin-bottom: 3em;
@@ -398,7 +505,6 @@ footer{
         display: block;
         min-height: 300px;
         }
-    
 }
 
 
@@ -412,6 +518,12 @@ footer{
         grid-auto-rows: minmax(300px,auto);
         grid-gap: 2em;
     }
+    
+
+
+    
+
+    
 }
 @media only screen and (max-width: 805px) {
   
@@ -432,8 +544,10 @@ footer{
     #newsletter button{
         
         display:block;
-        width: 73%;
+        width: 74%;
     }
+
+    
 
 }
 
@@ -450,4 +564,20 @@ footer{
         margin-left: 5%;
     }
 }
-    
+
+@media (min-width: 830px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 30px 10px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
